@@ -1,0 +1,68 @@
+body {
+  color: #4D3C31;
+}
+svg {
+  display: block;
+  margin: auto;
+}
+text {
+  stroke: none;
+  fill: #4D3C31;
+  font-size: 12px;
+}
+line {
+  stroke: #4D3C31;
+  stroke-width: 1;
+}
+.iqr {
+  fill: none;
+  stroke-width: 2px;
+}
+.iqr.dash {
+  fill: none;
+  stroke-width: 2px;
+  stroke-dasharray: 10,3;
+}
+.iqr.major {
+  fill: none;
+  stroke-width: 3.5px;
+}
+.axis path, .axis line {
+  fill: none;
+  stroke: #333333;
+  shape-rendering: crispEdges;
+}
+.y.axis.noline path {
+  display: none;
+}
+.y.axis line {
+  stroke: #DEDEDE;
+  stroke-dasharray: 2,2;
+}
+.map {
+  fill: #E8E8E8;
+  stroke: #4D3C31;
+  stroke-width: 0.5;
+}
+.bar_scale {
+  stroke: #4D3C31;
+  stroke-width: 0.5;
+}
+g.series path.series, g.series line.series, g.bar rect {
+  fill: none;
+  stroke-width: 2px;
+}
+g.series path.amend, g.bar rect.amend {
+  stroke-width: 4px;
+}
+g.series path.UnitedStates, g.series line.UnitedStates, g.bar rect.UnitedStates {
+  stroke: #CCCCCC;
+}
+g.series path.SanFrancisco, g.series line.SanFrancisco, g.bar rect.SanFrancisco {
+  stroke: #9E9582;
+  stroke-dasharray: 20,3,5,3;
+}
+g.series path.SanJose, g.series line.SanJose, g.bar rect.SanJose {
+  stroke: #5C5C5C;
+  stroke-dasharray: 7,5;
+}

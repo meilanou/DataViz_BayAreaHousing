@@ -1,0 +1,99 @@
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+}
+div.button {
+  background-color: #BCD9E3;
+  border: solid 1px #BABABA;
+  cursor: pointer;
+  width: 80px;
+  height: 20px;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+h2 {
+	margin: 30px 25px 20px 25px;
+  font-size: 20px;
+}
+p {
+	margin: 20px 25px 10px 25px;
+	font-size: 12px;
+}
+p.footnote {
+	font-size: 9px;
+  position: absolute;
+  bottom: 0;
+}
+div#container {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+div#left {
+  float: left;
+  margin: 0 1% 0 5%;
+  width: 32%;
+  height: 100%;
+  background-color: #F9F9F9;
+  position: relative;;
+}
+div#right {
+  float: left;
+  margin: 0 5% 0 1%;
+}
+div.perspectives {
+  border: solid 1px #4D3C31;
+  background-color: #BCD9E3;
+  padding: 10px;
+}
+div.perspectives_title {
+  display: inline;
+}
+select.perspectives {
+  width: 75%;
+  float: right;
+}
+div#viz_main {
+  width: 100%;
+  overflow: auto;
+}
+div#viz_left_pane {
+  float: left;
+}
+div#viz_right_pane {
+  float: right;
+  position: relative;
+}
+div#viz_legend {
+  float: left;
+  height: 120px;
+}
+div#viz_description {
+  float: right;
+  height: 120px;
+  border-bottom: solid 2px #888888;
+  position: relative;
+}
+div#viz_description span.period {
+   position: absolute;
+   top: 5px;
+   font-size: 12px;
+}
+div#viz_description span.description {
+   position: absolute;
+   bottom: 5px;
+   font-size: 12px;
+}
+div#viz_charts {
+  width: 100%;
+  position: absolute;
+}
+div#charts_legend {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: #F9F9F9;
+}

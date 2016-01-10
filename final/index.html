@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="/css/default_plots.css"> <!-- for svg elements -->
+  <link rel="stylesheet" type="text/css" href="/css/html_elements.css"> <!-- for html elements -->
+  <script src="http://d3js.org/d3.v3.min.js"></script>
+  <script src="http://d3js.org/queue.v1.min.js"></script>
+  <script src="/js/utilities.js"></script> <!-- common computation functions -->
+  <script src="/js/aesthetics.js"></script> <!-- functions to setup colors, etc -->
+  <script src="/js/default_plots.js"></script> <!-- shared plotting functions -->
+  <script src="/js/common.js"></script> <!-- shared page setup functions -->
+  <script src="/js/stories.js"></script> <!-- functions used for 1st part storytelling -->
+  <script src="/js/perspectives.js"></script> <!-- functions to setup perspectives for exploration.js -->
+  <script src="/js/exploration.js"></script> <!-- functions used for 2nd part user exploration -->
+</head>
+<body>
+  <div id='container'>
+    <div id='left'>
+      <h2>
+        San Francisco Bay Area Housing Market - Knowing Before Buying
+      </h2>
+      <p>
+        Several years after the house price crash that nearly took down an entire financial system, America’s property market appears to be recovering. But there are vast differences in housing markets across the nation. Some claim the housing market is in a far worse bubble currently. The argument: Housing is far less affordable today than it was back then, and the home price gains are driven not by healthy, end-user demand but by a lack of construction, artificially low interest rates, and institutional and foreign all-cash buyers.
+      </p>
+      <p>
+        In historically pricey California, especially some metropolises such as San Francisco Bay Area, prices have increased hugely over the same period. However, except for the rich sources of employment, other causes of price increase are same as the argument. But even with these concerns, while rents have also grown significantly, buying is still considered by many. And people can look in several local areas to find the best for them. Like differences across the nation, each local area also preset different market perspectives beyond simple pricing levels.
+      </p>
+      <p>
+        This visualization project will use historical and prediction data from Zillow to show the trends of housing and rental indices, various affordability ratios and several market indicators to help potential buyers in Bay Area to understand the local markets from a more comparative view along with in-depth insights.
+      </p>
+      <p>
+        You can replay the animation as needed and then continue to explore as much for your own interests.
+      </p>
+    </div>
+    <div id='right'>
+      <div id='div_chart1'></div>
+      <div id='div_chart2'></div>
+    </div>
+  </div>
+  <script type="text/javascript">
+    // add data resource to the bottom of left pane
+    // separated for repeated usage on diff pages
+    add_data_resource();
+    // match height of rigt pane, defined in stories.js
+    d3.select('#left')
+      .style('height', (height*1.5)+'px');
+    // start loading data and drawing charts 
+    draw_us();
+  </script>
+</body>
+</html>
